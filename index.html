@@ -5,74 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teacher's Homework Portal</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0; padding: 0; background-color: #f0f2f5;
-      display: flex; justify-content: center; align-items: center; min-height: 100vh;
+    html, body {
+      margin: 0; padding: 0; width: 100%; height: 100%;
+      overflow: hidden; background-color: #f0f2f5;
     }
-    .dashboard-container {
-      width: 100%; max-width: 550px; background: #ffffff; padding: 25px;
-      border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); box-sizing: border-box; margin: 20px;
-    }
-    .header { text-align: center; margin-bottom: 25px; }
-    .header h1 { font-size: 24px; color: #1e293b; margin: 0 0 5px 0; }
-    .header p { font-size: 14px; color: #64748b; margin: 0; }
-    .form-group { margin-bottom: 16px; }
-    label { display: block; font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 6px; }
-    input[type="text"], textarea {
-      width: 100%; padding: 10px 12px; font-size: 14px; border: 1px solid #cbd5e1;
-      border-radius: 6px; box-sizing: border-box; background-color: #f8fafc; transition: all 0.2s ease;
-    }
-    input[type="text"]:focus, textarea:focus {
-      outline: none; border-color: #2563eb; background-color: #ffffff; box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-    }
-    .submit-btn {
-      width: 100%; background-color: #2563eb; color: white; border: none; padding: 12px;
-      font-size: 15px; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background 0.2s ease;
-    }
-    .submit-btn:hover { background-color: #1d4ed8; }
-    .divider { height: 1px; background-color: #e2e8f0; margin: 25px 0; }
-    .list-title { font-size: 16px; font-weight: 600; color: #1e293b; margin-bottom: 12px; }
-    .hw-card {
-      background: #f8fafc; border: 1px solid #e2e8f0; border-left: 5px solid #2563eb;
-      border-radius: 6px; padding: 14px; margin-bottom: 12px;
-    }
-    .hw-meta { display: flex; justify-content: space-between; font-size: 12px; color: #64748b; font-weight: 500; margin-bottom: 4px; }
-    .hw-subject { font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
-    .hw-desc { font-size: 14px; color: #334155; line-height: 1.4; }
+    iframe { width: 100%; height: 100%; border: none; }
   </style>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.5/brython_stdlib.min.js"></script>
 </head>
-<body onload="brython()">
+<body>
 
-  <div class="dashboard-container">
-    <div class="header">
-      <h1>📝 Homework Record Board</h1>
-      <p>Post and track active assignments for your classes</p>
-    </div>
-
-    <div class="form-group">
-      <label>Class / Subject Name</label>
-      <input type="text" id="subject" placeholder="e.g., Mathematics Form 3">
-    </div>
-
-    <div class="form-group">
-      <label>Assignment Details</label>
-      <textarea id="homework" rows="3" placeholder="Describe the assignment pages or tasks..."></textarea>
-    </div>
-
-    <button class="submit-btn" id="submit-btn">Publish Assignment</button>
-
-    <div class="divider"></div>
-
-    <div class="list-title">Live Assignment Stream</div>
-    
-    <div id="preview-list">Loading live cloud database...</div>
-  </div>
-
-  <script type="text/python" src="main.py"></script>
+  <iframe src="https://trinket.io/embed/python3/YOUR_TRINKET_ID_HERE?runOption=run" allowfullscreen></iframe>
 
 </body>
 </html>
